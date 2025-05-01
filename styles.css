@@ -19,3 +19,12 @@ button {
 button:hover {
     background-color: #d35400;
 }
+.manhwa-list {
+    display: flex;
+    gap: 20px;
+}
+.manhwa-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
