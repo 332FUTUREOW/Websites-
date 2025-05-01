@@ -10,44 +10,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <p>This is a simple website hosted on GitHub Pages.</p>
-        <img src="images/AC269CA5-25DC-4B53-9D53-9378CD4FE5DC.png" alt="Sample Image">
-    </main>
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="manhwa.html">Manhwa</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <p>This is a simple website hosted on GitHub Pages.</p>
+            <img src="images/AC269CA5-25DC-4B53-9D53-9378CD4FE5DC.png" alt="Sample Image">
+
+            <!-- Popular Manhwa Section -->
+            <section class="manhwa-section">
+                <h2>Popular Manhwa</h2>
+                <div class="manhwa-list">
+                    <div class="manhwa-item">
+                        <img src="images/manhwa1.jpg" alt="Manhwa 1">
+                        <p>Manhwa Title 1</p>
+                    </div>
+                    <div class="manhwa-item">
+                        <img src="images/manhwa2.jpg" alt="Manhwa 2">
+                        <p>Manhwa Title 2</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </footer>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
-<button>Click Me</button>
-<h2>Popular Manhwa</h2>
-<div class="manhwa-list">
-    <div class="manhwa-item">
-        <img src="images/manhwa1.jpg" alt="Manhwa 1">
-        <p>Manhwa Title 1</p>
-    </div>
-    <div class="manhwa-item">
-        <img src="images/manhwa2.jpg" alt="Manhwa 2">
-        <p>Manhwa Title 2</p>
-    </div>
-</div>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="manhwa.html">Manhwa</a>
-    <a href="about.html">About</a>
-</nav>
