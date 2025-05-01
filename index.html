@@ -12,8 +12,10 @@
 <body>
     <div class="container">
         <!-- Header Section -->
-        <header>
+        <header class="banner">
             <h1>Welcome to My Website</h1>
+            <p>Your gateway to the best manhwa and stories!</p>
+            <button class="cta-button">Explore Now</button>
         </header>
 
         <!-- Navigation Bar -->
@@ -26,21 +28,44 @@
 
         <!-- Main Content Section -->
         <main>
-            <p>This is a simple website hosted on GitHub Pages.</p>
-            <img src="images/AC269CA5-25DC-4B53-9D53-9378CD4FE5DC.png" alt="Sample Image">
+            <section class="featured">
+                <h2>Featured Manhwa</h2>
+                <div class="manhwa-list">
+                    <div class="manhwa-item">
+                        <img src="images/manhwa1.jpg" alt="Manhwa 1">
+                        <p>Manhwa Title 1</p>
+                    </div>
+                    <div class="manhwa-item">
+                        <img src="images/manhwa2.jpg" alt="Manhwa 2">
+                        <p>Manhwa Title 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Admin Section (Hidden by Default) -->
+            <section id="admin-section" style="display: none;">
+                <h2>Admin: Add New Manhwa or Chapter</h2>
+                <form>
+                    <input type="text" name="title" placeholder="Manhwa Title" required>
+                    <input type="text" name="chapter" placeholder="Chapter Title">
+                    <textarea name="description" placeholder="Description"></textarea>
+                    <button type="submit">Add</button>
+                </form>
+            </section>
+        </main>
+
         <!-- Footer Section -->
         <footer>
             <p>&copy; 2025 My Website. All rights reserved.</p>
         </footer>
-
-        <!-- Contact Form -->
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="_replyto" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Check if user is admin
+        const isAdmin = true; // Change this to false for non-admin users
+        if (isAdmin) {
+            document.getElementById('admin-section').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
