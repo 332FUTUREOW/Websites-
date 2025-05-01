@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Manhwa Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Manhwa Banner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+        .header {
+            background-color: #ff9900;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .banner {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .banner img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #e68a00;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Manhwa Website</h1>
-    </header>
-    <main>
-        <section class="banner">
-            <img src="banner.png" alt="Manhwa Banner">
-            <button id="read-now">Read Now</button>
-        </section>
-        <section class="manhwa-list">
-            <h2>Available Manhwas</h2>
-            <ul>
-                <li>Manhwa 1</li>
-                <li>Manhwa 2</li>
-                <li>Manhwa 3</li>
-            </ul>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <div class="header">Manhwa Admin Panel</div>
+
+    <div class="banner">
+        <h1>Manhwa Banner</h1>
+        <img src="banner.png" alt="Manhwa Banner">
+        <a href="#" class="button">Read Now</a>
+    </div>
 </body>
 </html>
